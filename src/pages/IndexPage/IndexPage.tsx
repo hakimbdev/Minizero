@@ -11,6 +11,33 @@ export const IndexPage: FC = () => {
     <Page back={false}>
       <List>
         <Section
+          header="Meme Token Platform"
+          footer="Launch your own meme tokens on the TON blockchain or trade existing tokens"
+        >
+          <Link to="/">
+            <Cell
+              subtitle="Discover and trade meme tokens"
+            >
+              Open MemePad
+            </Cell>
+          </Link>
+          <Link to="/my-tokens">
+            <Cell
+              subtitle="View your tokens"
+            >
+              My Tokens
+            </Cell>
+          </Link>
+          <Link to="/create-token">
+            <Cell
+              subtitle="Launch your own meme token"
+            >
+              Create Token
+            </Cell>
+          </Link>
+        </Section>
+        
+        <Section
           header="Features"
           footer="You can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
         >
@@ -23,6 +50,7 @@ export const IndexPage: FC = () => {
             </Cell>
           </Link>
         </Section>
+        
         <Section
           header="Application Launch Data"
           footer="These pages help developer to learn more about current launch information"
